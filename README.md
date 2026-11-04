@@ -17,11 +17,15 @@ npx skills add hernancerm/upkeep --list
 
 # Install a specific skill
 # (/cleanup needs /hotspots and /inspect)
-npx skills add hernancerm/upkeep --skill inspect
+npx skills add hernancerm/upkeep -a claude-code -a antigravity --skill inspect
 
 # Install all skills
-npx skills add hernancerm/upkeep
+npx skills add hernancerm/upkeep -a claude-code -a antigravity --skill '*'
 ```
+
+`-a` names the agents to install for. Without it, the install fails (see
+[vercel-labs/skills#1352](https://github.com/vercel-labs/skills/issues/1352)). For other agents,
+pass their ids instead (run with `-a nope` to list them).
 
 ## Usage
 
