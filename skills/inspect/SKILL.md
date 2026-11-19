@@ -60,8 +60,9 @@ Prefer plain commands, one at a time, to avoid permission prompts: no pipes, `&&
 
 ### bugs
 
-Issues the diff causes within itself: missed cases (null, empty, errors, concurrency), missing
-tests, and breaks of the repo's own rules. What the change leaves out entirely belongs to `sense`.
+Issues the diff causes within itself: missed cases (null, empty, errors, concurrency, running more
+than once), guarantees lost when replacing a call or upgrading a dependency, missing tests, and
+breaks of the repo's own rules. What the change leaves out entirely belongs to `sense`.
 
 ### reuse
 

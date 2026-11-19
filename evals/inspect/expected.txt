@@ -4,6 +4,8 @@
 
 # Division by zero on an empty list.
 \[bugs\].*reports\.py:[67]
+# Path.mkdir drops exist_ok=True, failing when write_export runs a second time.
+\[bugs\].*exports\.py:[4-6]
 # Duplicates shop.dates.format_iso_date.
 \[reuse\].*reports\.py:1[01]
 # if/else that returns a bool.
